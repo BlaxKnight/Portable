@@ -1,0 +1,133 @@
+@font-face {
+ font-family: Inter;
+ src: url("font/Inter-Light.ttf") format("truetype");
+ font-weight: 300;
+}
+
+@font-face {
+ font-family: Inter;
+ src: url("font/Inter-Regular.ttf") format("truetype");
+ font-weight: 400;
+}
+
+@font-face {
+ font-family: Inter;
+ src: url("font/Inter-Medium.ttf") format("truetype");
+ font-weight: 500;
+}
+
+body {
+ scroll-behavior: smooth;
+ margin: 0;
+ padding: 0;
+ height: 100vh;
+ background-color: #e5e7eb;
+ font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu,
+  Roboto, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1 {
+ font-weight: 300;
+ margin: 1rem 1rem 1.5rem;
+}
+
+h2 {
+ font-weight: 500;
+ text-align: center;
+}
+
+h4 {
+ font-weight: 500;
+ text-align: center;
+}
+
+a {
+ font-size: 1.5rem;
+ text-decoration: none;
+ color: blue;
+}
+
+#app {
+ max-width: 1326px;
+ margin: 0 auto;
+ padding: 0.75rem;
+}
+
+.list {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 1.25rem;
+}
+
+.list-item {
+ background-color: #fff;
+ border-radius: 1.25rem;
+ box-shadow: 0 0 5px rgba(50, 50, 100, 0.1);
+ padding: 1.25rem;
+}
+
+.list-item_title {
+ margin: 0.25rem 0 0.75rem;
+}
+
+.info {
+ margin: 0.5rem;
+}
+
+.info *:last-child {
+ font-weight: 500;
+}
+
+.info-status {
+ padding: 0.25rem;
+ border-radius: 0.5rem;
+}
+
+.info-status.info-status--open {
+ background-color: rgba(0, 175, 100, 0.25);
+ color: green;
+}
+
+.info-status.info-status--closed {
+ background-color: rgba(255, 51, 0, 0.274);
+ color: red;
+}
+
+.info-status.info-status--pending {
+ background-color: rgba(175, 125, 0, 0.25);
+ color: yellow;
+}
+
+.info-status.info-status--incompatible {
+ background-color: rgba(255, 153, 0, 0.514);
+ color: orangered;
+}
+
+.info-status.info-status--unavailable {
+ background-color: rgba(175, 175, 175, 0.25);
+ color: black;
+}
+
+.info-address {
+ text-decoration: underline;
+}
+
+.info-desc {
+ font-weight: 400 !important;
+ background-color: #e5e7eb;
+ border-radius: 0.5rem;
+ margin: 0.5rem 0;
+ padding: 0.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+ .list {
+  grid-template-columns: repeat(2, 1fr);
+ }
+}
+
+@media only screen and (max-width: 720px) {
+ .list {
+  grid-template-columns: 1fr;
+ }
+}
