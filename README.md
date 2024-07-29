@@ -1,2 +1,2 @@
 ### Installation
-Just use Apache and Change data.php to Config servers. Thank You :)
+Just use apache and change data.php to config servers. Thank You :)
