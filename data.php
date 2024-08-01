@@ -56,7 +56,7 @@ $servers = [
   'name' => 'Lethal Company',
   'port' => '7777',
   'desc' => 'Lethal Moons',
-  'status' => 0
+  'status' => 3
  ],
  'vnc' => [
   'name' => 'Virtual Network Computing',
