@@ -1,8 +1,8 @@
 <?php
 $os = PHP_OS;
 $hostname = gethostname();
-$localIP = '127.0.0.1';
-$publicIP = '0.0.0.0';
+$localIP = $_SERVER['SERVER_NAME'];
+$publicIP = $_SERVER['SERVER_ADDR'];
 $servers = [
  'tp' => [
   'name' => 'TeamSpeak',
