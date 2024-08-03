@@ -15,7 +15,7 @@ require_once './classes/Status.php';
 
 <body>
  <main id="app">
-  <h1>PorTable v1.0 ->
+  <h1>PorTable v1.1 ->
    Server: <?php echo $hostname; ?>
    | OS: <?php echo $os; ?>
    | IP: <?php echo $publicIP; ?>
